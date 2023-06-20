@@ -1,0 +1,47 @@
+[
+  {
+    "id": "df7d48af-092e-4ba0-9c42-ece089d00af0",
+    "data": [
+      {
+        "text": "13th Feb, 2023",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cdb463e4-d265-4e78-8918-39774b64ba81",
+    "data": [
+      {
+        "text": "Today",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "df3a0478-ac35-45b8-883e-09a2d53f974f",
+    "data": [
+      {
+        "text": "Tomorrow",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

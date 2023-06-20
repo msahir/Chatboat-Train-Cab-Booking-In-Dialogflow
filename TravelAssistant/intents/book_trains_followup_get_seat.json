@@ -1,0 +1,75 @@
+{
+  "id": "59b287df-5a46-4fe5-92ec-f40e3a26b971",
+  "parentId": "7870b960-aabb-404d-a9ac-f46057f12657",
+  "rootParentId": "7870b960-aabb-404d-a9ac-f46057f12657",
+  "name": "book_trains_followup_get_seat",
+  "auto": true,
+  "contexts": [
+    "BookTrain-TravelClass",
+    "BookTrains-GetTravelClass-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "BookTrains-GetTravelClass.BookTrains-GetTravelClass-custom",
+      "affectedContexts": [
+        {
+          "name": "BookTrains-FollowUpGetSeat-followup",
+          "lifespan": 1,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7e68aaa3-b15c-4502-b6d3-2a54e80f1585",
+          "name": "travel_class",
+          "required": false,
+          "dataType": "@travel_class",
+          "value": "$travel_class",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "Do you want to select seat ?",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

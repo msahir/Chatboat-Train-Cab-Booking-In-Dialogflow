@@ -1,0 +1,42 @@
+{
+  "id": "023cea4c-121d-495a-a806-2da5116dc0e2",
+  "parentId": "19af06f8-1743-4cf6-986e-edd44b02c1ee",
+  "rootParentId": "19af06f8-1743-4cf6-986e-edd44b02c1ee",
+  "name": "book_trains_payment_conf_car_book-no",
+  "auto": true,
+  "contexts": [
+    "BookTrains-PaymentConfirmation-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "BookTrains-PaymentConfirmation.BookTrains-PaymentConfirmation-no",
+      "affectedContexts": [
+        {
+          "name": "BookTrains-CarBook",
+          "lifespan": 1,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

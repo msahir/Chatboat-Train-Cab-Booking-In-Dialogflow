@@ -1,0 +1,88 @@
+{
+  "id": "93fb94a1-0737-4cc3-85a9-efa921844b0e",
+  "name": "book_cars_get_date",
+  "auto": true,
+  "contexts": [
+    "bookcars_location_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "BookCars.BookCars-custom",
+      "affectedContexts": [
+        {
+          "name": "bookcars_date_context",
+          "lifespan": 1,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0f20df5b-299d-40dc-88bf-e0391f07ce7f",
+          "name": "geo-city1",
+          "required": true,
+          "dataType": "@sys.geo-city",
+          "value": "$geo-city1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "For when you want to book car?",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "suggestions": [
+            {
+              "title": "Today"
+            },
+            {
+              "title": "Tomorrow"
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

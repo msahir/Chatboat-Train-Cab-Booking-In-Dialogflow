@@ -1,0 +1,114 @@
+{
+  "id": "b6aabbe0-12c5-4191-97b8-5ae193a93ab1",
+  "name": "book_trains_get_date",
+  "auto": true,
+  "contexts": [
+    "train_context"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "slotFillingTrain",
+      "affectedContexts": [
+        {
+          "name": "BookTrains-Date",
+          "lifespan": 1,
+          "parameters": {}
+        },
+        {
+          "name": "session_vars",
+          "lifespan": 50,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e9896c0f-6fce-43d6-9ac3-584122ce14c2",
+          "name": "geo-city1",
+          "required": false,
+          "dataType": "@sys.geo-city",
+          "value": "$geo-city1",
+          "defaultValue": "#train_context.geo-city1",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d012ae41-fbb2-4708-9443-acc914320b17",
+          "name": "geo-city",
+          "required": false,
+          "dataType": "",
+          "value": "#train_context.geo-city",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "For when you want to book train ?",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "suggestions": [
+            {
+              "title": "Today"
+            },
+            {
+              "title": "Tomorrow"
+            },
+            {
+              "title": "Friday"
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "train_date_event"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

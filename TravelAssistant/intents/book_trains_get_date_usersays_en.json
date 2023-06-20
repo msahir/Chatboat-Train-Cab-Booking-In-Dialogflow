@@ -1,0 +1,17 @@
+[
+  {
+    "id": "00f1507c-aebd-4cb0-b7c2-0fa26167957d",
+    "data": [
+      {
+        "text": "Bangalore",
+        "meta": "@sys.geo-city",
+        "alias": "geo-city1",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

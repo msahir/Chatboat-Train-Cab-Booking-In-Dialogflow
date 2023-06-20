@@ -1,0 +1,105 @@
+{
+  "id": "92704677-4003-4136-bbc2-e6fb11f56725",
+  "name": "book_trains_get_seatno",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "BookTrain-Seat",
+          "lifespan": 1,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "62b5824f-bac1-4759-9902-f92b974bf597",
+          "name": "geo-city",
+          "required": false,
+          "dataType": "@sys.geo-city",
+          "value": "$geo-city",
+          "defaultValue": "#session_vars.geo-city",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "19964a60-08a0-4331-95da-d652329f9396",
+          "name": "geo-city1",
+          "required": false,
+          "dataType": "@sys.geo-city",
+          "value": "$geo-city1",
+          "defaultValue": "#session_vars.geo-city1",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "da276c50-c445-42fa-ad34-53c66cbf4d83",
+          "name": "travel_class",
+          "required": false,
+          "dataType": "@travel_class",
+          "value": "$travel_class",
+          "defaultValue": "#session_vars.travel_class",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "Awesome, please select your seat for train from $geo-city to $geo-city1 for $travel_class ?\n\nA | 1 2 3 4 5 6\nB | 1 2 3 4 5 6\nC | 1 2 3 4 5 6",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hello"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "train_seat_event"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

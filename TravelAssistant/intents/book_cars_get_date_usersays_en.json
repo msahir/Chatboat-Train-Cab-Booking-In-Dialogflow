@@ -1,0 +1,77 @@
+[
+  {
+    "id": "b63b606a-33e1-442a-9c0c-003ca4447ced",
+    "data": [
+      {
+        "text": "Bangalore",
+        "meta": "@sys.geo-city",
+        "alias": "geo-city1",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a35e6060-3c1c-4823-afbe-85006f9c80ca",
+    "data": [
+      {
+        "text": "Chennai",
+        "meta": "@sys.geo-city",
+        "alias": "geo-city1",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b765c4b9-1bda-4053-850b-4eabf226afd0",
+    "data": [
+      {
+        "text": "Pune",
+        "meta": "@sys.geo-city",
+        "alias": "geo-city1",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "57f855b1-1c15-46b2-ac12-ca0081511d88",
+    "data": [
+      {
+        "text": "Delhi",
+        "meta": "@sys.geo-city",
+        "alias": "geo-city1",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ff047fed-a30c-4788-adeb-da09af8317f2",
+    "data": [
+      {
+        "text": "Mumbai",
+        "meta": "@sys.geo-city",
+        "alias": "geo-city1",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

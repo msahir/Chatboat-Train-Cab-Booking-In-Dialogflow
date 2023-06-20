@@ -1,0 +1,32 @@
+[
+  {
+    "id": "62be84a0-e636-4f1f-8734-3c63cdef26a3",
+    "data": [
+      {
+        "text": "Feb 18, 2023",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "640feb86-f76d-46d7-a283-746bb5eef20a",
+    "data": [
+      {
+        "text": "Tomorrow",
+        "meta": "@sys.date",
+        "alias": "date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

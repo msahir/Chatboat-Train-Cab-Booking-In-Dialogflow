@@ -1,0 +1,100 @@
+{
+  "id": "6cd11416-8e8c-4e97-b7e1-a7db2ea2aa8d",
+  "name": "book_cars_confirmation",
+  "auto": true,
+  "contexts": [
+    "bookcars_car_name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "BookCars.BookCars-custom.BookCars-followUpDate-custom.BookCars-followUpCar-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3fe06499-dba7-4cde-804f-ee0b195d6723",
+          "name": "car_name",
+          "required": true,
+          "dataType": "@car_name",
+          "value": "$car_name",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter name"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4975e22e-e529-4953-b750-a82219c34bf0",
+          "name": "date",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$date",
+          "defaultValue": "#session_vars.date",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d325f3e4-a91d-48eb-b559-fa6260a77290",
+          "name": "geo-city",
+          "required": true,
+          "dataType": "@sys.geo-city",
+          "value": "$geo-city",
+          "defaultValue": "#session_vars.geo-city1",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "$car_name booked for $geo-city for $date",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

@@ -1,0 +1,110 @@
+{
+  "id": "7870b960-aabb-404d-a9ac-f46057f12657",
+  "name": "book_trains_get_travelclass",
+  "auto": true,
+  "contexts": [
+    "BookTrains-Date"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "BookTrain-TravelClass",
+          "lifespan": 1,
+          "parameters": {}
+        },
+        {
+          "name": "BookTrains-GetTravelClass-followup",
+          "lifespan": 1,
+          "parameters": {}
+        },
+        {
+          "name": "BookTrain-NotTomorrow-Option",
+          "lifespan": 1,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "715ea87d-c3ed-4391-b9a3-ecc2ac7d11ed",
+          "name": "date",
+          "required": false,
+          "dataType": "@sys.date",
+          "value": "$date",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "items": [
+            {
+              "description": "",
+              "textToSpeech": "Which class do you want travel ?",
+              "displayText": "",
+              "footer": "",
+              "ssml": ""
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "title": "",
+          "textToSpeech": "",
+          "suggestions": [
+            {
+              "title": "EC"
+            },
+            {
+              "title": "1AC"
+            },
+            {
+              "title": "2AC"
+            },
+            {
+              "title": "3AC"
+            },
+            {
+              "title": "Change destination"
+            },
+            {
+              "title": "Start Over"
+            }
+          ],
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
